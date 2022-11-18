@@ -25,7 +25,7 @@ jobs:
       # Afterwards, the action pulls down the correct version of HawkScan, in this instance 2.0.0. Then it runs HawkScan
       # against the application using the referenced API Key that was saved to the repo as a secret, and the HawkScan
       # configuration file stackhawk-actions.yml. It also stores information about the pull request event including the
-      # commit SHA and branch name and stores them to the variable names COMMIT_SHA and BRANCH_NAME.
+      # commit .SHA and branch name and stores them to the variable names COMMIT_SHA and BRANCH_NAME.
       - name: HawkScan
         uses: stackhawk/hawkscan-action@v2.0.0
         with:
